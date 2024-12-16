@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto Canda Tawa - Menu</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark text for readability */
+        }
+
+        header {
+            background-color: #302f2e; /* Dark background for header */
+            color: white; /* White text for contrast */
+            padding: 20px; /* Padding around header */
+            display: flex; /* Flexbox for layout */
+            justify-content: space-between; /* Space between title and nav */
+            align-items: center; /* Center items vertically */
+        }
+
+        header h1 {
+            font-size: 2.5rem; /* ukuran font nama resto */
+            margin: 0; /* Remove default margin */
+        }
+
+        nav {
+            margin-left: auto; /* Push navigation to the right */
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+        }
+
+        nav ul li {
+            display: inline; /* Display list items inline */
+            margin: 0 15px; /* Space between navigation items */
+        }
+
+        nav ul li a {
+            color: white; /* White text for links */
+            text-decoration: none; /* Remove underline */
+            font-size: 1.1rem; /* Font size for links */
+            padding: 5px 10px; /* Padding around links */
+            border-radius: 5px; /* Rounded corners for links */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+        }
+
+        nav ul li a:hover {
+            background-color: #e67e22; /* Highlight color on hover */
+            color: white; /* Maintain white text on hover */
+        }
+
+        .category-title {
+            font-size: 2rem; /* Font size for category titles */
+            text-align: center; /* Centered text */
+            margin: 30px 0; /* Margin above and below */
+        }
+
+        .product-grid {
+            display: flex; /* Flexbox for product layout */
+            justify-content: space-around; /* Space items evenly */
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            padding: 20px; /* Padding inside the grid */
+        }
+
+        .product {
+            background-color: #fff; /* White background for each product */
+            width: 300px; /* Fixed width for products */
+            margin: 20px; /* Space around products */
+            padding: 20px; /* Padding inside product cards */
+            border-radius: 10px; /* Rounded corners for product cards */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+        }
+
+        .product img {
+            width: 100%; /* Full width images */
+            border-radius: 10px; /* Rounded corners for images */
+        }
+
+        .product h3 {
+            text-align: center; /* Centered title */
+            margin: 15px 0; /* Margin above and below */
+        }
+
+        .product p {
+            text-align: center; /* Centered description */
+            font-size: 1rem; /* Font size for description */
+            color: #666; /* Lighter text color */
+        }
+
+        .product:hover {
+            transform: translateY(-10px); /* Slight lift on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+        }
+        
+        footer {
+            background-color: #302f2e; /* Dark footer background */
+            color: white; /* White text for footer */
+            text-align: center; /* Centered text */
+            padding: 20px; /* Padding around footer */
+            margin-top: 20px; /* Space above footer */
+        }
+
+    </style>
+
+    <header>
+        <h1>Resto Canda Tawa</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <section>
+        
+        <!-- Kategori 1: Makanan Pedas -->
+        <h3 class="category-title">Makanan Pedas</h3>
+        <div class="product-grid">
+            <div class="product">
+                <img src="geprek.jpg" alt="Makanan Pedas">
+                <h3>Ayam Geprek</h3>
+                <p>Kelezatan ayam dengan bumbu pedas yang menyala!</p>
+            </div>
+            <div class="product">
+                <img src="naspad.jpg" alt="Makanan Manis">
+                <h3>Nasi Padang</h3>
+                <p>Kalian akan menikmati cita rasa yang sangat enak dengan nasi dan lauk yang beragam.</p>
+            </div>
+            <div class="product">
+                <img src="mie kobongan.jpeg" alt="Makanan Pedas">
+                <h3>Mie Kobongan</h3>
+                <p>Mie kobongan adalah olahan mie dengan cabe yang melimpah dan berisi toping sosis dan pangsit.</p>
+            </div>
+        </div>
+
+        <!-- Kategori 2: Makanan Manis -->
+        <h3 class="category-title">Makanan Manis</h3>
+        <div class="product-grid">
+            <div class="product">
+                <img src="cheesecake.jpeg" alt="Makanan Manis">
+                <h3>Cheesecake Manis</h3>
+                <p>Cheesecake lembut dengan sentuhan rasa manis yang pas.</p>
+            </div>
+            <div class="product">
+                <img src="brownis coklat.jpeg" alt="Makanan Manis">
+                <h3>Brownies Cokelat Manis</h3>
+                <p>Brownies dengan cokelat premium yang memanjakan lidah.</p>
+            </div>
+            <div class="product">
+                <img src="cromboloni.jpg" alt="Makanan Manis">
+                <h3>Cromboloni</h3>
+                <p>Cromboloni merupakan jajanan yang merupakan perpaduan antara croissant dan bomboloni.</p>
+            </div>
+        </div>
+
+        <!-- Kategori 3: Makanan Berkuah -->
+        <h3 class="category-title">Makanan Berkuah</h3>
+        <div class="product-grid">
+            <div class="product">
+                <img src="sup sayur.jpg" alt="Makanan Manis">
+                <h3>Sup Sayur</h3>
+                <p>Cheesecake lembut dengan sentuhan rasa manis yang pas.</p>
+            </div>
+            <div class="product">
+                <img src="seblak.jpg" alt="Makanan Pedas">
+                <h3>Seblak</h3>
+                <p>Seblak merupakan makanan yang terbuat dari kerupuk basah yang dimasak dengan sayuran dengan tambahan toping yang enak, dan dimasak dengan kencur.</p>
+            </div>
+            <div class="product">
+                <img src="baso aci.jpg" alt="Makanan Manis">
+                <h3>Baso Aci</h3>
+                <p>Cromboloni merupakan jajanan yang merupakan perpaduan antara croissant dan bomboloni.</p>
+            </div>
+        </div>
+
+        <!-- Kategori 4: Minuman -->
+        <h3 class="category-title">Minuman</h3>
+        <div class="product-grid">
+            <div class="product">
+                <img src="mojito.jpeg" alt="Minuman">
+                <h3>Es Mojito</h3>
+                <p>Mojito adalah minuman koktail asal Kuba yang terkenal dengan kombinasi rasa min segar, jus lemon, gula, dan tentu saja rum.</p>
+            </div>
+            <div class="product">
+                <img src="lemon tea.jpeg" alt="Minuman">
+                <h3>Lemon Tea</h3>
+                <p>Lemon tea adalah minuman yang populer dan nikmat yang terbuat dari campuran teh dan perasan lemon.</p>
+            </div>
+             <div class="product">
+                <img src="boba.jpeg" alt="Minuman">
+                <h3>Bubble Tea</h3>
+                <p>Bubble tea merupakan minuman yang tengah naik daun karena rasanya yang manis, creamy berpadu dengan tekstur boba yang kenyal.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Resto Canda Tawa.</p>
+    </footer>
+
+</body>
+</html>
